@@ -1,65 +1,515 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="ja" class="no-js">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.5.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.5.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.5.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.5.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.5.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/fav.png">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <title>newCreator.org -特定非営利活動法人ニュークリエイターオルグ-</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Start header section -->
+    <header class="header-area" id="header-area">
+        <div class="dope-nav-container breakpoint-off">
+            <div class="container">
+                <div class="row">
+                    <!-- dope Menu -->
+                    <nav class="dope-navbar justify-content-between" id="dopeNav">
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html">
+                            <img src="img/logo.png" alt="" width="90%" height="90%">
+                        </a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="dope-navbar-toggler">
+                            <span class="navbarToggler">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="dope-menu">
+
+                            <!-- close btn -->
+                            <div class="dopecloseIcon">
+                                <div class="cross-wrap">
+                                    <span class="top"></span>
+                                    <span class="bottom"></span>
+                                </div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="dopenav">
+                                <ul id="nav">
+                                    <li>
+                                        <a href="#banner-section">トップ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about-section">概要</a>
+                                    </li>
+                                    <li>
+                                        <a href="#products-section">展開事業</a>
+                                    </li>
+                                    <li>
+                                        <a href="#testimonial-section">募集</a>
+                                    </li>
+                                    <li>
+                                        <a href="#download-section">お問い合わせ</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Start header section -->
+
+    <!-- Start banner section -->
+    <section class="banner-section relative section-gap-full" id="banner-section">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 banner-left">
+                    <h1 class="text-uppercase">ミライを作る<br>クリエイターを<br>発掘しよう</h1>
+                    <p>プログラミングのみならず、映像、デザインなど様々な分野で活躍する次の時代を作るクリエイターの育成を支援</p>
+                    <a class="video-btn primary-btn" href="about-us.html">About More</a>
+                </div>
+                <div class="col-md-6 banner-right text-center">
+                    <img class="img-fluid" src="img/screen1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+            <svg class="nectar-shape-divider" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"
+                preserveAspectRatio="none">
+                <path d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z"></path>
+                <path d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z"></path>
+                <path d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- End banner section -->
+
+    <!-- Start about section -->
+    <section class="about-section section-gap-full relative" id="about-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-12 about-left">
+                    <img class="img-fluid" src="img/app-img.png" alt="">
+                </div>
+                <div class="col-lg-5 col-md-7 about-right">
+                    <h3>newCreator.orgとは</h3>
+                    <h1>次世代の学びを<br>オープンに制作して、<br>提供するNPO法人です。</h1>
+                    <ul>
+                        <li class="d-flex">
+                            <div class="icon">
+                                <span class="ti-layout-media-center-alt"></span>
+                            </div>
+                            <div class="details">
+                                <h4>誰でも受け取れる</h4>
+                                <p>
+                                    プログラミングや理科教材を開発し、これらの媒体や設計データをオープンソース公開します。<br>
+                                    オープンソース教材は、誰もが自由に取り扱えます。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon">
+                                <span class="ti-crown"></span>
+                            </div>
+                            <div class="details">
+                                <h4>カスタマイズ</h4>
+                                <p>
+                                    プログラミングや理科教材を開発し、これらの媒体や設計データをオープンソース公開します。<br>
+                                    修正加筆や、あなたの家庭や学校での導入も可能です。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="icon">
+                                <span class="ti-headphone-alt"></span>
+                            </div>
+                            <div class="details">
+                                <h4>質の高いモデル</h4>
+                                <p>
+                                    オープンソース教材を元とした、教科書を小中学生向けに提供します。<br>
+                                    年代別、技能別、目的別にオープンソース版を再編集し、画面上でも紙媒体でも読みやすい、スライド形式で
+                                    配信予定です。
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <span data-parallax='{"x": 150, "y": -20, "rotateZ":500}'>
+                <img src="img/shape/fl-shape-1.png" alt="">
+            </span>
+            <span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'>
+                <img src="img/shape/fl-shape-2.png" alt="">
+            </span>
+            <span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'>
+                <img src="img/shape/fl-shape-3.png" alt="">
+            </span>
+            <span data-parallax='{"x": -20, "y": 180}'>
+                <img src="img/shape/fl-shape-4.png" alt="">
+            </span>
+            <span data-parallax='{"x": 300, "y": 70}'>
+                <img src="img/shape/fl-shape-5.png" alt="">
+            </span>
+            <span data-parallax='{"x": 250, "y": 180, "rotateZ":1500}'>
+                <img src="img/shape/fl-shape-6.png" alt="">
+            </span>
+            <span data-parallax='{"x": 180, "y": 10, "rotateZ":2000}'>
+                <img src="img/shape/fl-shape-7.png" alt="">
+            </span>
+            <span data-parallax='{"x": 60, "y": -100}'>
+                <img src="img/shape/fl-shape-9.png" alt="">
+            </span>
+            <span data-parallax='{"x": -30, "y": 150, "rotateZ":1500}'>
+                <img src="img/shape/fl-shape-10.png" alt="">
+            </span>
+        </div>
+    </section>
+    <!-- End about section -->
+
+    <!-- Start feature section -->
+    <section class="feature-section section-gap-full" id="products-section">
+        <div class="container">
+            <div class="row align-items-center feature-wrap">
+                <div class="col-lg-4 header-left">
+                    <h1>
+                        様々な教材を<br>開発しています
+                    </h1>
+<!--                    <a class="primary-btn" href="products.html">詳しく-->
+<!--                        <span class="ti-arrow-right"></span>-->
+<!--                    </a>-->
+                </div>
+                <div class="col-lg-8">
+                    <div class="row features-wrap">
+                        <div class="col-md-6">
+                            <div class="single-feature relative">
+                                <div class="overlay overlay-bg"></div>
+                                <span class="ti-book"></span>
+                                <h3>newCreator.md</h3>
+                                <p>
+                                    オープンソースで開発を進めているプログラミング教材です。<br>
+                                    誰もが教材開発に参加でき、誰もがこれを使って授業や自習することができます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-feature relative">
+                                <div class="overlay overlay-bg"></div>
+                                <span class="ti-world"></span>
+                                <h3>newCreator.net</h3>
+                                <p>
+                                    オープンソース教材に準拠した、様々な着眼点からのプログラミング教材配信プラットフォームです。<br>
+                                    小学生,中学生の様々な観点からのプログラミングの学び方に対応しています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-feature relative">
+                                <div class="overlay overlay-bg"></div>
+                                <span class="ti-pencil"></span>
+                                <h3>newScientist</h3>
+                                <p>
+                                  プログラミングを用いて未知の発見の喜びを体験する、理科実験キットです。<br>
+                                    他教材と同様に、設計や指導案とテキストをnewCreator.netとnewCreator.mdによる配信します。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-feature relative">
+                                <div class="overlay overlay-bg"></div>
+                                <span class="ti-map"></span>
+                                <h3>newCamp</h3>
+                                <p>
+                                    クリエイティブな勉強は、新しい場所との出会いで加速することができます。<br>
+                                    newCampは、合宿よりも楽しい、理科実験キャンプとプログラミングキャンプとして2020年にリリース予定です。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End feature section -->
+
+    <!-- Start price section 有償プランの価格が決定次第に更新-->
+<!--    <section class="price-section section-gap-full" id="price-section">-->
+<!--        <div class="container">-->
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-lg-5 price-left">-->
+<!--                    <h4>-->
+<!--                        Our Pricing Plan </br> and Options-->
+<!--                    </h4>-->
+<!--                    <p>-->
+<!--                        Far curiosity incommode now led smallness allowance. Favour bed assure son things yet.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-7 d-flex price-right">-->
+<!--                    <div class="single-price main">-->
+<!--                        <div class="top-wrap">-->
+<!--                            <i class="ti ti-medall"></i>-->
+<!--                            <h4>Enterprise</h4>-->
+<!--                            <p>For Large Size Team</p>-->
+<!--                            <h2><span>$</span>88.0</h2>-->
+<!--                        </div>-->
+<!--                        <div class="bottom-wrap">-->
+<!--                            <ul>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>1000 Max Conntection</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>1000 Max Conntection</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>Additional Option</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>Lifetime Support</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                            <a href="#" class="primary-btn primary-btn-w d-block mx-auto">Select Plan</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="single-price">-->
+<!--                        <div class="top-wrap">-->
+<!--                            <i class="ti ti-briefcase"></i>-->
+<!--                            <h4>Free</h4>-->
+<!--                            <p class="relative">For Personal Use</p>-->
+<!--                            <h2 class="relative"><span>$</span>00.0</h2>-->
+<!--                        </div>-->
+<!--                        <div class="bottom-wrap">-->
+<!--                            <ul>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>1000 Max Conntection</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>1000 Max Conntection</span>-->
+<!--                                    <i class="ti ti-check"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>Additional Option</span>-->
+<!--                                    <i class="ti ti-close"></i>-->
+<!--                                </li>-->
+<!--                                <li class="d-flex justify-content-between align-items-center">-->
+<!--                                    <span>Lifetime Support</span>-->
+<!--                                    <i class="ti ti-close"></i>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                            <a href="#" class="primary-btn d-block mx-auto">Select Plan</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    <!-- End price section -->
+
+    <!-- Start screenshot section -->
+    <section class="cta-section section-gap-half relative">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row section-gap-half">
+                <div class="col-lg-12 text-center">
+                    <h1>一緒に新しい教育を作りませんか？</h1>
+                    <h4>newCreator.orgでは、様々な立場から関わってくださる方を募集しています。</h4>
+                    <a class="primary-btn" href="contact.html">詳しくはこちら</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End screenshot section -->
+    <section class="service-section section-gap-full">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  col-md-6 pb-30">
+                    <div class="single-service">
+                        <h4>ファシリテーター</h4>
+                        <p>
+                            小中学生向けに開催するキャンプやワークショップのスタッフ、教材開発コミュニティのまとめ役を募集しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 pb-30">
+                    <div class="single-service">
+                        <h4>プロジェクトスタッフ</h4>
+                        <p>
+                            教材の企画やキャンプの計画など、直接的にnewCreatorを支えてくださる方を募集しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 pb-30">
+                    <div class="single-service">
+                        <h4>コラボレーター</h4>
+                        <p>
+                            オープンソース版教材の開発に是非参加してください。GitHubで管理しているため、誰でも参加可能です。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-service">
+                        <h4>企業スポンサー</h4>
+                        <p>
+                            教育の行き届かない地域での、ＩＴ教育を広める取り組みに資金面や様々な形でのリソース提供にご協力ください。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-service">
+                        <h4>個人スポンサー</h4>
+                        <p>
+                            クラウドファンディングやファンクラブへのご参加、寄付によって新規教材の開発や販売のご支援をしてくださる方を募集しています。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-service">
+                        <h4>協力コミュニティー</h4>
+                        <p>
+                            newCreator教材を活用した、プログラミング教室をあなたの街や学校で実施してくださる団体を募集しています。。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Start download section -->
+    <section class="download-section section-gap-full " id="download-section">
+        <div class="container">
+            <div class="row download-wrap justify-items-between align-items-center">
+                <div class="col-lg-6">
+                    <h1>お問い合わせ</h1>
+                    <p>
+                        各種応募、コラボレーションのご提案などを積極的に募集しております。<br>
+                        2018年以前に実施,ご利用されたプログラムやコンテンツに関するお問い合わせは、NPO法人ハックジャパン
+                        へお願い致します。
+                    </p>
+                </div>
+                <div class="col-lg-6 row address-wrap justify-content-center contact-page-section">
+
+                    <script src="https://sdk.form.run/js/v2/embed.js"></script>
+                    <div
+                            class="formrun-embed"
+                            data-formrun-form="@info-system-2003"
+                            data-formrun-redirect="true">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End download section -->
+
+    <!-- Start footer section -->
+    <footer class="footer-section section-gap-half">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 footer-left">
+                        <img src="img/logo-w.png" alt="" width="50%" height="50%">
+                    </a>
+                    <p class="copyright-text">&copy; 特定非営利活動法人ニュークリエイターオルグ
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <ul id="social">
+<!--                        <li>-->
+<!--                            <a target="_blank" href="#">-->
+<!--                                <i class="fa fa-facebook"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a target="_blank" href="#">-->
+<!--                                <i class="fa fa-twitter"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a target="_blank" href="#">-->
+<!--                                <i class="fa fa-google-plus"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a target="_blank" href="#">-->
+<!--                                <i class="fa fa-instagram" aria-hidden="true"></i>-->
+<!--                            </a>-->
+<!--                        </li>-->
+                    </ul>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="https://newcreator.net/app">newcreator.net</a>
+                        </li>
+                        <li>
+                            <a href="https://newcreator.org">運営会社</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer section -->
+
+    <div class="scroll-top">
+        <i class="ti-angle-up"></i>
+    </div>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/dopeNav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.5.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+</body>
+
 </html>
