@@ -16,7 +16,6 @@
     min-height: 950px;
 }
 
-<style>
  .gradient-bg, .page-top-banner .overlay-bg, .banner-section .overlay-bg, .features-wrap .single-feature .overlay-bg {
-    background: -webkit-linear-gradient(0deg, rgb(2, 156, 217) 0%, rgb(73, 79, 160) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(2, 156, 217) 0%, rgb(73, 79, 160) 100%)!important;
 }
