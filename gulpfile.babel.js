@@ -29,7 +29,7 @@ gulp.task('scss', () => {
     .src('./scss/*.scss')
     .pipe(sass())
     .pipe(postcss(processors))
-    .pipe(gulp.dest('/css/'))
+    .pipe(gulp.dest('css/'))
 });
 
 gulp.task('build',
@@ -51,7 +51,8 @@ gulp.task('watch', () => {
     browserSync.reload()
     done()
   }
-  gulp.watch('./**/**', browserReload);
+  gulp.watch('./**/*', browserReload);
+  gulp.watch('./index.html', browserReload);
   gulp.watch('./js/*', gulp.series('babel'));
   gulp.watch('./scss/*', gulp.series('scss'));
 })
