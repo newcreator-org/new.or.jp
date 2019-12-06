@@ -1,0 +1,17 @@
+.gradient-bg,
+.page-top-banner .overlay-bg,
+.banner-section .overlay-bg,
+.features-wrap .single-feature .overlay-bg {
+    -webkit-linear-gradient: (0deg, #029CD9 0%, #494FA0 100%)!important;
+}
+
+.banner-section .overlay-bg{
+    opacity: .6 !important;
+}
+
+.banner-section {
+    background-color: #029CD9;
+    background-image: url(../img/hoge.svg);
+    background-size: cover;
+    min-height: 950px;
+}
