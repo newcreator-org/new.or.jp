@@ -19,9 +19,13 @@
  .gradient-bg, .page-top-banner .overlay-bg, .banner-section .overlay-bg, .features-wrap .single-feature .overlay-bg {
     background: -webkit-linear-gradient(0deg, rgb(2, 156, 217) 0%, rgb(73, 79, 160) 100%)!important;
 }
+
 .features-wrap .single-feature span {
   font-size: 35px!important;
   color: #494FA0!important;
   padding-bottom: 25px!important;
   display: inline-block;!important;
+}
+.primary-btn{
+  color: #494FA0;
 }
