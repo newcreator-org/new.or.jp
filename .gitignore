@@ -65,3 +65,6 @@ node_modules/
 .env
 css/
 js/bundle/
+
+pakcage-lock.json
+yarn.lock
