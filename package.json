@@ -1,0 +1,44 @@
+{
+  "name": "new-or-jp",
+  "version": "1.0.0",
+  "description": "new-or-jp",
+  "scripts": {
+    "commit": "node ./node_modules/cz-customizable/standalone.js",
+    "start": "gulp",
+    "build": "npm run clean & gulp scss",
+    "clean": "rimraf dist/{css/*,js/*}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newcreator-org/new.or.jp.git"
+  },
+  "author": "newcreator-org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newcreator-org/new.or.jp/issues"
+  },
+  "homepage": "https://github.com/newcreator-org/new.or.jp#readme",
+  "devDependencies": {
+    "autoprefixer": "9.7.6",
+    "browser-sync": "2.26.7",
+    "css-declaration-sorter": "5.1.2",
+    "css-mqpacker": "7.0.0",
+    "cz-customizable": "6.2.0",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "7.0.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0",
+    "postcss-cssnext": "3.1.0",
+    "postcss-reporter": "6.0.1",
+    "rimraf": "3.0.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Explorer 11",
+    "iOS 9.0",
+    "Android 4.1"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
