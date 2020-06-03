@@ -123,6 +123,7 @@ footer li:before {
 
 .footer {
   margin: 3rem 0 0 0;
+  padding: 3rem 1.5rem 1rem;
 }
 
 
@@ -271,4 +272,8 @@ footer li:before {
 
 .title:not(.is-spaced)+.subtitle {
   margin-top: 1rem;
+}
+
+.copyright {
+  margin: 2rem 0 0 0;
 }
