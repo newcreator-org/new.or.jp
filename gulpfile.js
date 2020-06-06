@@ -12,10 +12,10 @@ gulp.task('scss', () => {
     })]
 
     return gulp
-        .src('./scss/*.scss')
+        .src('./src/scss/*.scss')
         .pipe(sass())
         .pipe(postcss(processors))
-        .pipe(gulp.dest('css/'))
+        .pipe(gulp.dest('dist/css/'))
 });
 
 gulp.task('serve', done => {
@@ -33,9 +33,9 @@ gulp.task('watch', () => {
         browserSync.reload()
         done()
     }
-    gulp.watch('./**/*', browserReload);
+    gulp.watch('./dist/**/*', browserReload);
     gulp.watch('./*.html', browserReload);
-    gulp.watch('./scss/**/*', gulp.series('scss'));
+    gulp.watch('./src/scss/**/*', gulp.series('scss'));
 })
 
 gulp.task('default', gulp.series('serve', 'watch'))

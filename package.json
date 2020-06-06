@@ -1,7 +1,7 @@
 {
-  "name": "new-or-jp",
+  "name": "newcreator-org",
   "version": "1.0.0",
-  "description": "new-or-jp",
+  "description": "newcreator-org",
   "scripts": {
     "commit": "node ./node_modules/cz-customizable/standalone.js",
     "start": "gulp",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newcreator-org/new.or.jp.git"
+    "url": "git+https://github.com/newcreator-org/newcreator-org.git"
   },
   "author": "newcreator-org",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/newcreator-org/new.or.jp/issues"
+    "url": "https://github.com/newcreator-org/newcreator-org/issues"
   },
-  "homepage": "https://github.com/newcreator-org/new.or.jp#readme",
+  "homepage": "https://github.com/newcreator-org/newcreator-org#readme",
   "devDependencies": {
     "autoprefixer": "9.7.6",
     "browser-sync": "2.26.7",
